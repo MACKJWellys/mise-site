@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | MISE</title>
+  <meta name="description" content="The page you're looking for doesn't exist.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="MISE home">
+        <img src="media/mise-logo.png" alt="MISE" class="nav__logo-img">
+      </a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="index.html" class="nav__link">Home</a>
+      </nav>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="error-page">
+      <div class="container">
+        <span class="error-page__code">404</span>
+        <h1 class="error-page__title">WRONG FREQUENCY</h1>
+        <p class="error-page__text">This page doesn't exist. Tune back in.</p>
+        <div class="error-page__actions">
+          <a href="index.html" class="btn btn--primary">Back to Home</a>
+          <a href="https://open.spotify.com/track/5HWD549jbjC0yIihwWZahP?si=cf37b70388f24d52" class="btn btn--ghost" target="_blank" rel="noopener">Listen on Spotify</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('nav').classList.add('is-scrolled');
+  </script>
+</body>
+</html>

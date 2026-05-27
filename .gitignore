@@ -1,0 +1,15 @@
+# Reference site (not needed for deploy)
+reference website/
+
+# Artist source media (originals)
+Arists-media/
+Artist brief.md
+
+# Uncropped logo originals
+public_html/media/mise-main-logo-yellow-uncropped-whitebg*
+
+# IDE / OS
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini

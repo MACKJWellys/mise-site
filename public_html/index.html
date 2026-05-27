@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MISE | Live Neo-Soul, Jazz & Hip-Hop from Ireland</title>
+  <meta name="description" content="MISE is a live, soulful and experimental music project blending neo-soul, jazz and hip-hop with Irish language and cultural influences. Led by Seán Ó'Síocháin.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MISE | Live Neo-Soul, Jazz & Hip-Hop from Ireland">
+  <meta property="og:description" content="Live, soulful and experimental music blending neo-soul, jazz and hip-hop with Irish language and cultural influences.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mise.ie">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://mise.ie">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Critical CSS -->
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:16px}
+    body{font-family:'Space Grotesk',sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden}
+    .preloader{position:fixed;inset:0;z-index:9999;background:#0a0a0a;display:flex;align-items:center;justify-content:center}
+  </style>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@latest/dist/lenis.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "MISE",
+    "description": "Live, soulful and experimental music project blending neo-soul, jazz and hip-hop with Irish language and cultural influences.",
+    "url": "https://mise.ie",
+    "genre": ["Neo-Soul", "Jazz", "Hip-Hop"],
+    "sameAs": [
+      "https://www.instagram.com/mise.gram/",
+      "https://www.youtube.com/@MISE.YOUTUBE",
+      "https://open.spotify.com/track/5HWD549jbjC0yIihwWZahP",
+      "https://music.apple.com/gb/album/pellador-live-single/1882264987",
+      "https://soundcloud.com/mise"
+    ],
+    "member": {
+      "@type": "Person",
+      "name": "Seán Ó'Síocháin"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <img src="media/mise-logo.png" alt="" class="preloader__logo">
+  </div>
+
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="MISE home">
+        <img src="media/mise-logo.png" alt="MISE" class="nav__logo-img">
+      </a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="index.html" class="nav__link nav__link--active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#music" class="nav__link">Music</a>
+      </nav>
+      <a href="https://www.instagram.com/mise.gram/" class="nav__cta" target="_blank" rel="noopener">
+        Follow MISE
+      </a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <a href="index.html" class="mobile-menu__link">Home</a>
+      <a href="#about" class="mobile-menu__link">About</a>
+      <a href="#music" class="mobile-menu__link">Music</a>
+      <a href="https://www.instagram.com/mise.gram/" class="mobile-menu__cta" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        Follow MISE
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__overlay"></div>
+        <img src="media/epic-mise-onstage-potential-hero-image.jpeg" alt="MISE performing live — full band on stage with crowd" class="hero__image" width="1920" height="1080" loading="eager">
+      </div>
+      <div class="hero__content">
+        <div class="hero__badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#E5B80B"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="#E5B80B" stroke-width="1.5" fill="none"/></svg>
+          <span>NEO-SOUL &middot; JAZZ &middot; HIP-HOP</span>
+        </div>
+        <h1 class="hero__title">
+          <span class="hero__title-line">MUSIC AS A</span>
+          <span class="hero__title-line">DIRECT EXTENSION</span>
+          <span class="hero__title-line hero__title-line--accent">OF THE SELF</span>
+        </h1>
+        <p class="hero__subtitle">Live, soulful and experimental. Blending rich harmonies with Dilla-inspired rhythms, abstract rap, and Irish language and cultural influences.</p>
+        <div class="hero__ctas">
+          <a href="https://open.spotify.com/track/5HWD549jbjC0yIihwWZahP?si=cf37b70388f24d52" class="btn btn--primary" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            Listen on Spotify
+          </a>
+          <a href="#about" class="btn btn--ghost">About MISE</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator">
+        <span>SCROLL</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== PLATFORM BAR ========== -->
+    <section class="platform-bar" aria-label="Listen on">
+      <div class="container">
+        <div class="platform-bar__grid">
+          <a href="https://open.spotify.com/track/5HWD549jbjC0yIihwWZahP?si=cf37b70388f24d52" class="platform-bar__link" target="_blank" rel="noopener" aria-label="Spotify">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            <span class="platform-bar__label">Spotify</span>
+          </a>
+          <a href="https://music.apple.com/gb/album/pellador-live-single/1882264987" class="platform-bar__link" target="_blank" rel="noopener" aria-label="Apple Music">
+            <svg viewBox="0 0 24 24"><path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.802.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03c.525 0 1.048-.034 1.57-.1.823-.104 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.166-1.068.192-.94.07-1.96-.46-2.308-1.38a1.93 1.93 0 01.462-2.08c.33-.32.737-.516 1.172-.628.36-.093.728-.16 1.09-.245.307-.072.527-.24.608-.56.02-.08.03-.164.03-.247V8.58c0-.123-.015-.245-.058-.362-.09-.252-.3-.39-.554-.376-.18.01-.356.04-.53.075l-3.635.756c-.02.004-.04.01-.06.017-.273.08-.434.26-.472.543-.01.065-.013.132-.013.198v7.418c0 .408-.05.81-.23 1.183-.282.588-.747.963-1.382 1.145-.352.1-.71.165-1.075.193-.94.07-1.957-.46-2.304-1.38-.312-.826-.04-1.73.657-2.205.323-.22.688-.36 1.07-.46.295-.076.592-.14.89-.21.376-.084.612-.303.688-.69.014-.07.02-.143.02-.215V7.378c0-.296.046-.584.19-.846.183-.334.462-.516.816-.59.204-.04.41-.072.615-.107l2.697-.56 2.157-.45c.228-.046.457-.09.69-.112.29-.03.52.1.647.37.052.112.08.234.08.36v4.068z"/></svg>
+            <span class="platform-bar__label">Apple Music</span>
+          </a>
+          <a href="https://soundcloud.com/mise" class="platform-bar__link" target="_blank" rel="noopener" aria-label="SoundCloud">
+            <svg viewBox="0 0 24 24"><path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c-.009-.057-.049-.1-.1-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.172 1.282c.013.06.045.094.104.094.057 0 .09-.035.104-.094l.192-1.282-.207-1.332c-.014-.06-.047-.094-.104-.094m1.81-.7c-.063 0-.104.05-.109.108l-.218 2.022.218 2.034c.005.058.046.108.109.108.062 0 .104-.05.11-.108l.252-2.034-.252-2.023c-.006-.057-.048-.107-.11-.107m.89-.136c-.069 0-.112.052-.117.112l-.203 2.16.203 2.117c.005.062.048.112.117.112.068 0 .112-.05.118-.112l.234-2.117-.234-2.16c-.006-.06-.05-.112-.118-.112m.92-.261c-.074 0-.12.056-.124.12l-.19 2.42.19 2.21c.004.066.05.12.124.12.072 0 .119-.054.123-.12l.217-2.21-.217-2.42c-.004-.064-.05-.12-.123-.12m.944-.16c-.08 0-.126.06-.131.127l-.174 2.58.174 2.235c.005.068.051.127.131.127.078 0 .125-.06.131-.127l.2-2.235-.2-2.58c-.006-.067-.053-.127-.131-.127m.954-.052c-.084 0-.133.063-.137.134l-.161 2.632.161 2.252c.004.072.053.134.137.134.083 0 .132-.062.138-.134l.183-2.252-.183-2.632c-.006-.071-.055-.134-.138-.134m.968.035c-.09 0-.14.066-.143.14l-.147 2.598.147 2.262c.003.076.054.14.143.14.088 0 .139-.064.144-.14l.168-2.262-.168-2.598c-.005-.074-.056-.14-.144-.14m.973.082c-.095 0-.146.07-.149.146l-.134 2.516.134 2.27c.003.078.054.146.149.146.093 0 .146-.068.15-.146l.153-2.27-.153-2.516c-.004-.076-.057-.146-.15-.146m.99.12c-.1 0-.154.072-.157.152l-.12 2.396.12 2.277c.003.082.058.152.158.152.098 0 .152-.07.157-.152l.138-2.277-.138-2.396c-.005-.08-.059-.152-.157-.152m1.01.15c-.104 0-.159.076-.163.158l-.107 2.247.107 2.28c.004.084.059.158.164.158.103 0 .158-.074.163-.158l.122-2.28-.122-2.247c-.005-.082-.06-.158-.163-.158m1.036.154c-.11 0-.165.078-.168.164l-.094 2.093.094 2.28c.003.088.058.164.168.164.109 0 .165-.076.17-.164l.107-2.28-.108-2.093c-.004-.086-.06-.164-.169-.164m2.283-.384c-.035-.004-.07-.006-.106-.006-.285 0-.556.066-.801.183a3.024 3.024 0 00-1.474 2.636v.017l.003 2.264c.004.088.061.164.17.164h4.053c.126 0 .228-.1.228-.226V14.93c0-1.573-1.262-2.858-2.833-2.92l-.003-.002a2.856 2.856 0 00-.237-.006z"/></svg>
+            <span class="platform-bar__label">SoundCloud</span>
+          </a>
+          <a href="https://www.youtube.com/@MISE.YOUTUBE" class="platform-bar__link" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span class="platform-bar__label">YouTube</span>
+          </a>
+          <a href="https://www.instagram.com/mise.gram/" class="platform-bar__link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <span class="platform-bar__label">Instagram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sean-marketingstrategist-copywriter/" class="platform-bar__link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span class="platform-bar__label">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__image-wrap">
+            <img src="media/blackandwhite-mise-onstage.jpeg" alt="MISE performing live in an intimate venue" class="about__image" width="800" height="600" loading="lazy">
+            <div class="about__image-accent"></div>
+          </div>
+          <div class="about__content">
+            <span class="section-label">THE PROJECT</span>
+            <h2 class="section-title">NOT A GENRE.<br>A LANGUAGE.</h2>
+            <p class="about__text">MISE is a live, soulful and experimental music project rooted in self-expression and cultural exploration. Led by Seán, MISE draws from neo-soul, jazz and hip-hop, blending rich harmonies with Dilla-inspired rhythms, abstract rap, and Irish language and cultural influences.</p>
+            <p class="about__text">The name MISE, meaning "myself" in Irish, speaks to both identity and intention. It reflects an unpretentious, genre-fluid approach where music is treated as a direct extension of the self rather than a fixed category.</p>
+            <div class="about__credentials">
+              <div class="about__credential">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E5B80B" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Live instrumentation at the core</span>
+              </div>
+              <div class="about__credential">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E5B80B" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Multiple sold-out shows</span>
+              </div>
+              <div class="about__credential">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E5B80B" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Worked with artists including Sonnyjim</span>
+              </div>
+              <div class="about__credential">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E5B80B" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Irish language & cultural influences</span>
+              </div>
+            </div>
+            <a href="https://www.instagram.com/mise.gram/" class="btn btn--ghost" target="_blank" rel="noopener">Follow the Journey</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LIVE GALLERY ========== -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <span class="section-label">ON STAGE</span>
+        <h2 class="section-title">THE LIVE<br>EXPERIENCE</h2>
+
+        <div class="gallery__grid">
+          <div class="gallery__card gallery__card--large">
+            <img src="media/mise-onstage-secondary.jpeg" alt="MISE performing live with band under stage lights" class="gallery__image" width="800" height="600" loading="lazy">
+            <div class="gallery__overlay">
+              <span class="gallery__tag">LIVE SHOW</span>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="media/drummer-hd-photo.jpeg" alt="MISE drummer performing live" class="gallery__image" width="600" height="600" loading="lazy">
+            <div class="gallery__overlay">
+              <span class="gallery__tag">RHYTHM</span>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="media/epic-mise-onstage-potential-hero-image.jpeg" alt="Full band on stage with LED backdrop and crowd" class="gallery__image" width="600" height="600" loading="lazy">
+            <div class="gallery__overlay">
+              <span class="gallery__tag">ENERGY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MUSIC EMBED ========== -->
+    <section class="music-embed section" id="music">
+      <div class="container">
+        <div class="music-embed__inner">
+          <span class="section-label">LATEST RELEASE</span>
+          <h2 class="section-title section-title--center">PELLADOR<br>(LIVE)</h2>
+          <p class="section-subtitle">Available now on all platforms.</p>
+          <div class="music-embed__player">
+            <iframe src="https://open.spotify.com/embed/track/5HWD549jbjC0yIihwWZahP?utm_source=generator&theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section section">
+      <div class="container">
+        <div class="cta-section__inner">
+          <h2 class="cta-section__title">MISE IS BOTH A<br>WINDOW AND AN<br>INVITATION</h2>
+          <p class="cta-section__text">A window into an inner world and an invitation for listeners to explore their own. Prioritising emotional honesty, presence and connection over passive consumption.</p>
+          <div class="cta-section__buttons">
+            <a href="https://open.spotify.com/track/5HWD549jbjC0yIihwWZahP?si=cf37b70388f24d52" class="btn btn--primary btn--large" target="_blank" rel="noopener">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              Listen on Spotify
+            </a>
+            <a href="https://www.instagram.com/mise.gram/" class="btn btn--ghost" target="_blank" rel="noopener">Follow on Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="media/mise-logo.png" alt="MISE" class="footer__logo-img">
+          <p class="footer__tagline">Live, soulful and experimental music.<br>Neo-soul, jazz & hip-hop from Ireland.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">LISTEN</h4>
+          <a href="https://open.spotify.com/track/5HWD549jbjC0yIihwWZahP?si=cf37b70388f24d52" class="footer__link" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://music.apple.com/gb/album/pellador-live-single/1882264987" class="footer__link" target="_blank" rel="noopener">Apple Music</a>
+          <a href="https://soundcloud.com/mise" class="footer__link" target="_blank" rel="noopener">SoundCloud</a>
+          <a href="https://www.youtube.com/@MISE.YOUTUBE" class="footer__link" target="_blank" rel="noopener">YouTube</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">CONNECT</h4>
+          <a href="https://www.instagram.com/mise.gram/" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/in/sean-marketingstrategist-copywriter/" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> MISE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <a href="https://open.spotify.com/track/5HWD549jbjC0yIihwWZahP?si=cf37b70388f24d52" class="sticky-cta__link" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+      Listen on Spotify
+    </a>
+  </div>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
