@@ -812,8 +812,10 @@ ul, ol { list-style: none; }
   .nav__links, .nav__cta { display: none; }
   .nav__hamburger { display: flex; }
 
-  .hero { align-items: center; min-height: 55svh; }
-  .hero__content { padding-bottom: 0; }
+  .hero { display: flex; flex-direction: column; min-height: auto; align-items: stretch; padding: 0; }
+  .hero__bg { position: relative; height: 55svh; min-height: 300px; }
+  .hero__content { position: relative; z-index: 2; padding: var(--space-lg) clamp(1rem, 3vw, 2rem) var(--space-xl); }
+  .hero__subtitle { color: var(--color-text-primary); font-weight: 400; }
   .hero__image { object-fit: cover; object-position: center 20%; }
   .hero__scroll-indicator { display: none; }
   .hero__ctas { flex-direction: column; }
@@ -845,6 +847,54 @@ ul, ol { list-style: none; }
   .hero__title { font-size: clamp(2.5rem, 10vw, 4rem); }
   .btn { padding: 14px 28px; font-size: var(--text-sm); }
   .btn--large { padding: 16px 32px; font-size: var(--text-base); }
+}
+
+/* ---------- UTILITY ---------- */
+.text-accent { color: var(--color-accent); }
+
+/* ---------- SEÁN PAGE ---------- */
+.sean-page {
+  padding-top: calc(80px + var(--space-2xl));
+  padding-bottom: var(--space-section);
+  min-height: 100vh;
+}
+.sean-page__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+.sean-page__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+.sean-page__roles {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+  line-height: 1.8;
+}
+.sean-page__bio p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+.sean-page__bio p:last-child { margin-bottom: 0; }
+.sean-page__connect {
+  margin-top: var(--space-xl);
+}
+@media (max-width: 768px) {
+  .sean-page__grid { grid-template-columns: 1fr; }
+  .sean-page__image { aspect-ratio: 3/4; max-height: 500px; }
 }
 
 /* ---------- PORTFOLIO PAGE ---------- */
@@ -886,10 +936,11 @@ ul, ol { list-style: none; }
   min-width: 100%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   flex-shrink: 0;
   user-select: none;
   -webkit-user-drag: none;
+  background: #000;
 }
 .slideshow__btn {
   position: absolute;
