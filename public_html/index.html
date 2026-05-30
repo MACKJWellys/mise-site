@@ -319,13 +319,37 @@
   <!-- JS -->
   <script src="js/main.js" defer></script>
   <script>
-  /* Mobile hero: clip subtitle so it only appears above the sticky Spotify button */
+  /* Mobile hero: dynamic spacer + fade-mask on subtitle */
   (function() {
     if (window.innerWidth > 768) return;
+    var hero = document.querySelector('.hero__content');
+    var badge = document.querySelector('.hero__badge');
+    var title = document.querySelector('.hero__title');
     var sub = document.querySelector('.hero__subtitle');
     var btn = document.querySelector('.hero__ctas .btn--primary');
-    if (!sub || !btn) return;
-    var fade = 30; /* px of soft fade */
+    if (!hero || !badge || !title || !sub || !btn) return;
+
+    /* Size the spacer so badge+title sit above the sticky button */
+    function setSpacer() {
+      var vh = window.innerHeight;
+      var btnH = btn.offsetHeight;
+      var btnBottom = 20; /* matches CSS sticky bottom */
+      var btnArea = btnH + btnBottom;
+      /* Measure badge + title including their margins */
+      var badgeStyle = getComputedStyle(badge);
+      var titleStyle = getComputedStyle(title);
+      var contentH = badge.offsetHeight
+        + parseFloat(badgeStyle.marginBottom)
+        + title.offsetHeight
+        + parseFloat(titleStyle.marginBottom)
+        + 8; /* breathing room */
+      var spacer = vh - contentH - btnArea;
+      hero.style.setProperty('--hero-spacer', Math.max(100, spacer) + 'px');
+    }
+    setSpacer();
+
+    /* Fade-mask: subtitle only visible above the sticky button */
+    var fade = 30;
     function clip() {
       var br = btn.getBoundingClientRect();
       var sr = sub.getBoundingClientRect();
@@ -348,8 +372,10 @@
       if (window.innerWidth > 768) {
         sub.style.webkitMaskImage = '';
         sub.style.maskImage = '';
+        hero.style.removeProperty('--hero-spacer');
         return;
       }
+      setSpacer();
       clip();
     });
   })();

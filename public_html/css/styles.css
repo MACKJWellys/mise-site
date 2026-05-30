@@ -820,12 +820,12 @@ ul, ol { list-style: none; }
     display: flex; flex-direction: column;
     padding: 0 clamp(1rem, 3vw, 2rem);
   }
-  /* Spacer pushes badge+title above sticky button; subtitle hides behind it */
+  /* Spacer pushes badge+title above sticky button; subtitle hides behind it.
+     --hero-spacer is set by JS to adapt to any screen; static calc is fallback. */
   .hero__content::before {
     content: '';
     order: 0;
-    min-height: calc(100svh - 266px);
-    min-height: calc(100vh - 266px); /* fallback */
+    min-height: var(--hero-spacer, calc(100svh - 266px));
   }
   .hero__badge { order: 1; }
   .hero__title { order: 2; }
