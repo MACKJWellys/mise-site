@@ -318,5 +318,41 @@
 
   <!-- JS -->
   <script src="js/main.js" defer></script>
+  <script>
+  /* Mobile hero: clip subtitle so it only appears above the sticky Spotify button */
+  (function() {
+    if (window.innerWidth > 768) return;
+    var sub = document.querySelector('.hero__subtitle');
+    var btn = document.querySelector('.hero__ctas .btn--primary');
+    if (!sub || !btn) return;
+    var fade = 30; /* px of soft fade */
+    function clip() {
+      var br = btn.getBoundingClientRect();
+      var sr = sub.getBoundingClientRect();
+      var hide = sr.bottom - br.top;
+      if (hide > 0) {
+        var visible = sr.height - hide;
+        var maskEnd = Math.max(0, visible);
+        var maskStart = Math.max(0, maskEnd - fade);
+        var mask = 'linear-gradient(to bottom, black ' + maskStart + 'px, transparent ' + maskEnd + 'px)';
+        sub.style.webkitMaskImage = mask;
+        sub.style.maskImage = mask;
+      } else {
+        sub.style.webkitMaskImage = 'none';
+        sub.style.maskImage = 'none';
+      }
+    }
+    clip();
+    window.addEventListener('scroll', clip, { passive: true });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        sub.style.webkitMaskImage = '';
+        sub.style.maskImage = '';
+        return;
+      }
+      clip();
+    });
+  })();
+  </script>
 </body>
 </html>
